@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -19,13 +19,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: yellow;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +34,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.links-one{
+  h2{
+    color: yellow;
+  }
+}
+.links-two{
+  h2{
+    color: aqua;
   }
 }

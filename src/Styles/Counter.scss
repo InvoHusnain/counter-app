@@ -1,0 +1,44 @@
+$fontFamily: "Montserrat", sans-serif;
+
+.counter-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  h1 {
+    font-family: $fontFamily;
+    text-decoration: underline orange;
+    text-underline-position: auto;
+    text-transform: uppercase;
+  }
+  p{
+    font-family: $fontFamily;
+    font-size: 30px;
+  }
+  .btns_Flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    .plusBtn,
+    .minusBtn {
+      background: orange;
+      width: 100px;
+      font-family: $fontFamily;
+      border-radius: 5px;
+      border: none;
+      font-size: 50px;
+    }
+    .resetBtn {
+      background: orange;
+      width: 60%;
+      font-family: $fontFamily;
+      border-radius: 5px;
+      border: none;
+      font-size: 40px;
+    }
+  }
+}

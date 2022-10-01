@@ -1,0 +1,43 @@
+$redColor: red;
+$blueColor: blue;
+$pinkColor: pink;
+$greenColor: green;
+
+
+.zain{
+    button{
+        color: $redColor;
+        width: 200px;
+        height: 50px;
+    } 
+}
+
+.husnain{
+    h1{
+        color: skyblue;
+        font-size: 60px;
+    }
+    button{
+        color: $greenColor;
+        background: yellow;
+        width: 200px;
+        height: 50px;
+    } 
+}
+
+.media{
+    @media screen and (max-width:992px) {
+        button{
+            width: 100px;
+        }
+    }
+}
+// .blueClass{
+//     color: $blueColor;
+// }
+// .pinkClass{
+//     color: $pinkColor;
+// }
+// .greenClass{
+//     color: $greenColor;
+// }
