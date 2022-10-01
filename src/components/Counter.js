@@ -20,13 +20,13 @@ const Counter = () => {
 
   return (
     <div className="counter-body">
-        <h1>Simple Counter App</h1>
-      <p>Count: {countNum}</p>
+        <h1>I Love You Alizay 💞</h1>
+      {/* <p>Count: {countNum}</p>
       <div className="btns_Flex">
       <button className="plusBtn" onClick={increaseValaue}>+</button>
       <button className="minusBtn" onClick={decreaseValue}>-</button>
       <button className="resetBtn" onClick={resetValue}>Reset</button>
-      </div>
+      </div> */}
     </div>
   );
 };
