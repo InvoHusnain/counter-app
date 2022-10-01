@@ -5,7 +5,7 @@ import '../Styles/Counter.scss'
 const Form = () => {
   return (
     <div className="counter-body">
-        <h1>I Love You Alizay ♥️</h1>
+        <h1>Form</h1>
     </div>
   )
 }
