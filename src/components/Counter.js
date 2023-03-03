@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import '../Styles/Counter.scss'
+import "../Styles/Counter.scss";
 
-const Counter = () => {
+const Counter = (props) => {
   let [countNum, setCount] = useState(0);
   let increaseValaue = () => {
     setCount((countNum += 1)); //increases the count by 1
@@ -20,13 +20,20 @@ const Counter = () => {
 
   return (
     <div className="counter-body">
-        <h1>Simple Counter App</h1>
+      <h1>Simple Counter App</h1>
       <p>Count: {countNum}</p>
       <div className="btns_Flex">
-      <button className="plusBtn" onClick={increaseValaue}>+</button>
-      <button className="minusBtn" onClick={decreaseValue}>-</button>
-      <button className="resetBtn" onClick={resetValue}>Reset</button>
+        <button className="plusBtn" onClick={increaseValaue}>
+          +
+        </button>
+        <button className="minusBtn" onClick={decreaseValue}>
+          -
+        </button>
+        <button className="resetBtn" onClick={resetValue}>
+          Reset
+        </button>
       </div>
+      {[0].includes(props.index) ? <h1>Home</h1> : <h1>About</h1>}
     </div>
   );
 };

@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -52,14 +52,14 @@ code {
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #acacac30;
-transition: 0.1s ease all;
+  transition: 0.1s ease all;
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #8f88f43d;
   border-radius: 5px;
-    border: 1px solid #9088f4;
+  border: 1px solid #9088f4;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -76,10 +76,14 @@ transition: 0.1s ease all;
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.simplebar-content {
+  background-color: red;
 }

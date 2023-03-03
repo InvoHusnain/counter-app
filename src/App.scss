@@ -37,13 +37,197 @@
   }
 }
 
-.links-one{
-  h2{
+.links-one {
+  h2 {
     color: yellow;
   }
 }
-.links-two{
-  h2{
+.links-two {
+  h2 {
     color: aqua;
   }
+}
+
+// form {
+//   margin-top: 100px;
+//   display: flex;
+//   flex-direction: column;
+//   row-gap: 10px;
+//   input {
+//     border: 1px solid aqua;
+//     box-shadow: none;
+//     background: transparent;
+//     border-radius: 5px;
+//     color: #ffffff;
+//     outline: none;
+//     font-size: 18px;
+//   }
+//   select {
+//     border: 1px solid aqua;
+//     box-shadow: none;
+//     background: transparent;
+//     border-radius: 5px;
+//     color: #ffffff;
+//     outline: none;
+//     font-size: 18px;
+//   }
+//   button {
+//     background-color: yellow;
+//     border-radius: 5px;
+//     color: #282c34;
+//     max-width: 250px;
+//     margin: 0 auto;
+//     border: none;
+//     outline: none;
+//     font-size: 18px;
+//   }
+// }
+
+// ??????
+/**
+  * Sliding tiles
+  *
+  * @author jh3y
+*/
+// @-webkit-keyframes sliding-tile {
+//   0% {
+//     -webkit-transform: translate(-50%, -50%) translate(-50%, -50%);
+//     transform: translate(-50%, -50%) translate(-50%, -50%);
+//   }
+//   25% {
+//     -webkit-transform: translate(-50%, -50%) translate(50%, -50%);
+//     transform: translate(-50%, -50%) translate(50%, -50%);
+//   }
+//   50% {
+//     -webkit-transform: translate(-50%, -50%) translate(50%, 50%);
+//     transform: translate(-50%, -50%) translate(50%, 50%);
+//   }
+//   75% {
+//     -webkit-transform: translate(-50%, -50%) translate(-50%, 50%);
+//     transform: translate(-50%, -50%) translate(-50%, 50%);
+//   }
+//   100% {
+//     -webkit-transform: translate(-50%, -50%) translate(-50%, -50%);
+//     transform: translate(-50%, -50%) translate(-50%, -50%);
+//   }
+// }
+// @keyframes sliding-tile {
+//   0% {
+//     -webkit-transform: translate(-50%, -50%) translate(-50%, -50%);
+//     transform: translate(-50%, -50%) translate(-50%, -50%);
+//   }
+//   25% {
+//     -webkit-transform: translate(-50%, -50%) translate(50%, -50%);
+//     transform: translate(-50%, -50%) translate(50%, -50%);
+//   }
+//   50% {
+//     -webkit-transform: translate(-50%, -50%) translate(50%, 50%);
+//     transform: translate(-50%, -50%) translate(50%, 50%);
+//   }
+//   75% {
+//     -webkit-transform: translate(-50%, -50%) translate(-50%, 50%);
+//     transform: translate(-50%, -50%) translate(-50%, 50%);
+//   }
+//   100% {
+//     -webkit-transform: translate(-50%, -50%) translate(-50%, -50%);
+//     transform: translate(-50%, -50%) translate(-50%, -50%);
+//   }
+// }
+
+// .sliding-tiles:after,
+// .sliding-tiles:before {
+//   -webkit-animation: sliding-tile 1.25s infinite linear;
+//   animation: sliding-tile 1.25s infinite linear;
+//   background-color: white;
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   height: 20px;
+//   width: 20px;
+// }
+
+// .sliding-tiles:after {
+//   -webkit-animation: sliding-tile 1.25s -0.625s infinite linear;
+//   animation: sliding-tile 1.25s -0.625s infinite linear;
+// }
+.image-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &__tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      border: none;
+      cursor: pointer;
+      margin-right: 1rem;
+      padding: 0.5rem;
+      transition: background-color 0.2s ease-in-out;
+
+      &.active {
+        background-color: #333;
+        color: #fff;
+
+        img {
+          filter: grayscale(0);
+        }
+      }
+
+      &:hover:not(.active) {
+        background-color: #ccc;
+      }
+
+      img {
+        max-width: 100%;
+        filter: grayscale(1);
+        transition: filter 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs button {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tabs button.active {
+  background-color: #ccc;
+}
+
+.slider {
+  margin-top: 20px;
+}
+
+.slider img {
+  width: 50%;
+  margin: 0 auto;
+  // height: 100vh;
 }

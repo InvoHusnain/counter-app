@@ -1,35 +1,43 @@
-import React from 'react'
-import './App.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import Counter from './components/Counter';
-// import Modal from './components/Modal';
-// import Button from 'react-bootstrap/Button';
-// import Posts from './components/Posts';
-import UseEffects from './components/UseEffect/useEffects';
-
-
-// import States from './components/States';
-
-// const res = "false";
+import React from "react";
+import "./App.scss";
+import FetchAPITest from "./components/API Integration/FetchAPITest";
+// import FetchSpinner from "./components/API Integration/FetchSpinner";
 
 function App() {
-  // const brands = ["Suzuki", "Toyota", "Civic"];
-  // const arr = ['A', 'B', 'C', 'D'];
-  // const [modalShow, setModalShow] = useState(false);
   return (
     <div className="App-header">
-        {/* <Counter/> */}
-        {/* <Button variant="primary" onClick={() => setModalShow(true)}>
-        Launch vertically centered modal
-      </Button>
-      <Modal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */}
-      {/* <Posts/> */}
-      <UseEffects/>
+      {/* <FetchSpinner /> */}
+      <FetchAPITest />
     </div>
   );
 }
 
 export default App;
+
+// import React from "react";
+// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <nav>
+//         <ul>
+//           <li>
+//             <Link to="/">Home</Link>
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//         </ul>
+//       </nav>
+//       <Routes>
+//         <Route index element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
