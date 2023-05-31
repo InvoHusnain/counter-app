@@ -10,7 +10,7 @@ export default function Filter() {
     "Milk",
     "Peanuts",
     "Butter",
-    "Tomato"
+    "Tomato",
   ];
 
   const [filteredList, setFilteredList] = new useState(itemList);
@@ -38,7 +38,7 @@ export default function Filter() {
         <h4>Most Popular</h4>
         <ol>
           {filteredList.map((item, index) => (
-            <li key={index}> <a href="#">{item}</a> </li>
+            <li key={index}> {item} </li>
           ))}
         </ol>
       </div>

@@ -31,6 +31,27 @@ const tabs = [
       },
     ],
   },
+  {
+    title: "Tab 3",
+    content: [
+      {
+        id: 1,
+        Text: "HEllo",
+      },
+      {
+        id: 2,
+        imageSrc: "https://picsum.photos/id/103/600/400",
+      },
+      {
+        id: 3,
+        imageSrc: "https://picsum.photos/id/1003/600/400",
+      },
+      {
+        id: 4,
+        imageSrc: "https://picsum.photos/id/1015/600/400",
+      },
+    ],
+  },
 ];
 var settings = {
   dots: true,
@@ -59,21 +80,21 @@ function MyComponent() {
         ))}
       </div>
       <div className="slider">
-        <Slider {...settings}>
-          {tabs[currentTab].content.map((item) => (
-            <>
-              {item.imageSrc ? (
-                <div key={item.id}>
-                  <img src={item.imageSrc} alt={item.id} />
-                </div>
-              ) : (
-                <div key={item.id}>
-                  <p>{item.Text} </p>
-                </div>
-              )}
-            </>
-          ))}
-        </Slider>
+        {/* <Slider {...settings}> */}
+        {tabs[currentTab].content.map((item) => (
+          <>
+            {item.imageSrc ? (
+              <div key={item.id}>
+                <img src={item.imageSrc} alt={item.id} />
+              </div>
+            ) : (
+              <div key={item.id}>
+                <p>{item.Text} </p>
+              </div>
+            )}
+          </>
+        ))}
+        {/* </Slider> */}
       </div>
     </>
   );

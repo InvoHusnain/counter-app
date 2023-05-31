@@ -36,8 +36,7 @@ const FetchAPITest = () => {
         <div className="user-container" key={key}>
           <img src={content.avatar} alt="" />
           <div className="userDetail">
-            <div className="first-name">{`${content.first_name}                
-                                   ${content.last_name}`}</div>
+            <div className="first-name">{`${content.first_name}${content.last_name}`}</div>
             <div className="last-name">{content.email}</div>
           </div>
         </div>

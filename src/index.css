@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,11 +10,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 /* ))))))))))))))) */
 /* The container */
-.container {
+/* .container {
   display: flex;
   column-gap: 20px;
   align-items: center;
@@ -29,38 +29,38 @@ code {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* Hide the browser's default radio button */
-.container input {
+/* .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-}
+} */
 
 /* Create a custom radio button */
-.checkmark {
+/* .checkmark {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: transparent;
-  /* border-radius: 10%; */
-}
+  border-radius: 10%;
+} */
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+/* .container:hover input ~ .checkmark {
   background-color: #acacac30;
   transition: 0.1s ease all;
-}
+} */
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
+/* .container input:checked ~ .checkmark {
   background-color: #8f88f43d;
   border-radius: 5px;
   border: 1px solid #9088f4;
-}
+} */
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 /* .checkmark:after {
@@ -70,12 +70,12 @@ code {
 } */
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
+/* .container input:checked ~ .checkmark:after {
   display: block;
-}
+} */
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+/* .container .checkmark:after {
   top: 9px;
   left: 9px;
   width: 8px;
@@ -86,4 +86,4 @@ code {
 
 .simplebar-content {
   background-color: red;
-}
+} */
