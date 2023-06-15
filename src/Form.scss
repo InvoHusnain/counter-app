@@ -1,0 +1,29 @@
+.form-wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.form-outlined {
+  padding: 15px 5px 5px 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  max-width: 336px;
+  border-radius: 5px;
+  position: relative;
+  input {
+    border: none;
+  }
+  .clicked {
+    transition: transform 0.3s ease;
+    transform: translateY(-18px);
+    position: absolute;
+    color: rgb(0, 69, 96);
+    font-size: 14px;
+  }
+  .notClicked {
+    position: absolute;
+    transform: translateY(0px);
+    transition: transform 0.3s ease;
+  }
+}

@@ -9,7 +9,7 @@
 // // import LayoutEffect from "./components/Hooks/useLayoutEffect";
 // // import MyComponent from "./components/Hooks/useEffect";
 // // import FetchSpinner from "./components/API Integration/FetchSpinner";
-// // import { InlineWidget, PopupWidget } from "react-calendly";
+// import { InlineWidget, PopupWidget } from "react-calendly";
 
 // function App() {
 //   return (
@@ -36,6 +36,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Create from "./Create";
 import Home from "./Home";
 import Update from "./Update";
+import { InlineWidget, PopupWidget } from "react-calendly";
+import Form from "./Form";
 
 function App() {
   return (
@@ -57,7 +59,7 @@ function App() {
     // </BrowserRouter>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Form />} />
         <Route path="/create" element={<Create />} />
         <Route path="/edit/:id" element={<Update />} />
       </Routes>
